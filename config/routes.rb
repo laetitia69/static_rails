@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get 'new',        to: 'users#new',   as: 'new_user'
   post 'create',    to: 'users#create',as: 'creation'
-  get '/show/:id', to: 'users#show',  as: 'show_user'
+  get '/show/:username', to: 'users#show',  as: 'show_user'
   get 'error',	    to: 'users#error', as: 'error'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
