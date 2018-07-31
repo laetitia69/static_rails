@@ -1,0 +1,11 @@
+<h1>Mon premier site avec rails :-)</h1>
+<p>je vais pouvoir me la pèter hihi</p>
+<a href="<%= new_user_path %>">Viens par ici pour t'inscrire dans notre Team</a>
+
+<p>Un aperçu de nos moussaillons présents dans notre team Lyonnaise</p>
+
+<% for users in @user %>
+	<div>
+		<a href="show_user_path/<%= @user.id %>"><%= @user.username %></a>
+	</div>
+<% end %>
